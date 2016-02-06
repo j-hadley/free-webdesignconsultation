@@ -73,30 +73,60 @@
 
     <!-- Header -->
 
-<header class = "banner">
-    <div>
+<section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-8">
-                    <div class = "intro-text">
-                            <span class="intro-text-thanks">Thanks!</span>
-                            <div>
-                              <hr class="line-separator">
-                              <span class="skills">Your Submission Has Been Successfully Received</span>
-                            </div>
-                          <div class="text-center">
-                            <div class="home home-button">
-                              <a href="http://www.centrixwebdesign.com/" class="btn btn-outline">
-                              <i class="fa fa-download"></i> Home
-                              </a>
-                            </div>  
+                <div class="col-xs-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <form action="//formspree.io/jessewhadley@hotmail.com"
+      method="POST">
+
+                     <div class="row control-group">
+                       <div class="form-group col-xs-12 floating-label-form-group controls">
+                          <label>Name</label>
+                          <input type="text" class="form-control" name="Name" required placeholder="Name">
+                       </div>
+                     </div>
+                     <div class="row control-group">
+                       <div class="form-group col-xs-12 floating-label-form-group controls">
+                          <label>Email</label>
+                          <input type="email" class="form-control" name="Email" required placeholder="Email">
+                       </div>
+                     </div>
+                     <div class="row control-group">
+                       <div class="form-group col-xs-12 floating-label-form-group controls">
+                          <label>Phone Number</label>
+                          <input type="text" class="form-control" name="Phone Number" required placeholder="Phone Number">
+                        </div>
+                     </div>
+                     <div class="row control-group">
+                       <div class="form-group col-xs-12 floating-label-form-group controls">
+                          <label>Message</label>
+                          <textarea rows="5" class="form-control" name="Message" required placeholder="Message"></textarea>
+
+                       </div>
+                     </div>
+                     <br>
+                     <div id="success"></div>
+                       <div class="row">
+                          <div class="form-group col-xs-12">
+                           <button type="submit" class="btn btn-success btn-lg">Send</button>
                           </div>
+                       </div>
+                          <input type="hidden" name="_next" value="//centrixwebdesign.com/thanks" />
+                          <input type="hidden" name="_subject" value="New submission!" />
+                    </form>
+                    <div class = "bottom-padding">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </section>
 
     <!-- Footer -->
     <footer class="text-center">
